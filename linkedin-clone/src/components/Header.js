@@ -12,7 +12,9 @@ console.log(window.React1 === window.React2);
         
         <div className = 'header'>
             <div className = 'header__left'>
-                <img src = '' alt = ''/>
+                <img 
+                src = 'https://www.flaticon.com/svg/static/icons/svg/174/174857.svg' 
+                alt = ''/>
 
                 <div className = 'header__search'>
                     <SearchIcon />
