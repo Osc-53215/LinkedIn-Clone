@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.css';
+import HeaderOption from './HeaderOption';
 import SearchIcon from '@material-ui/icons/Search';
+import HomeIcon from '@material-ui/icons/Home';
 
 function Header() {
     require('react-dom');
@@ -25,6 +27,7 @@ console.log(window.React1 === window.React2);
             </div>
 
             <div className = 'header__right'>
+
 
             </div>
             
