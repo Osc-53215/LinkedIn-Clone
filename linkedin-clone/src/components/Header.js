@@ -3,12 +3,9 @@ import './Header.css';
 import HeaderOption from './HeaderOption';
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home';
+import SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 
 function Header() {
-    require('react-dom');
-window.React2 = require('react');
-console.log(window.React1 === window.React2);
-
 
     return (
         
@@ -27,7 +24,8 @@ console.log(window.React1 === window.React2);
             </div>
 
             <div className = 'header__right'>
-
+                <HeaderOption Icon = {HomeIcon} title = 'Home' />
+                <HeaderOption Icon = {SupervisorAccountIcon} title = 'Home' />
 
             </div>
             
