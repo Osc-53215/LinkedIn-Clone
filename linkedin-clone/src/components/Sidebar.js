@@ -6,7 +6,10 @@ function Sidebar() {
     return (
         <div className = 'sidebar'>
             <div className = 'sidebar__top'>
-                <img src = '' alt = ''/>
+                <img 
+                src = 'https://images.unsplash.com/photo-1516641051054-9df6a1aad654?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80' 
+                alt = ''
+                />
                 <Avatar className = 'sidecar__avatar'/>
                 <h2>Oscar Colon</h2>
                 <h2>oscarcolon732@gmail.com</h2>
