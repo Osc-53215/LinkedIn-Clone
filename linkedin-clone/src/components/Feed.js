@@ -1,5 +1,6 @@
 import React from 'react';
 import './Feed.css';
+import InputOption from './InputOption';
 import CreatIcon from '@material-ui/icons/Create';
 
 function Feed() {
@@ -12,6 +13,9 @@ function Feed() {
                         <input type="text" />
                         <button type = 'submit'>Send</button>
                     </form>
+                </div>
+                <div className="feed__inputOptions">
+                        <InputOption />
                 </div>
             </div>
         </div>
