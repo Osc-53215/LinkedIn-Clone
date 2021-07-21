@@ -1,10 +1,17 @@
 import React from 'react';
-import './Feed.css'
+import './Feed.css';
+import CreatIcon from '@material-ui/icons/Create';
 
 function Feed() {
     return (
-        <div>
-            
+        <div className = 'feed'>
+            <div className="feed__inputContainer">
+                <CreatIcon />
+                <form>
+                    <input type="text" />
+                    <button>Send</button>
+                </form>
+            </div>
         </div>
     )
 }
