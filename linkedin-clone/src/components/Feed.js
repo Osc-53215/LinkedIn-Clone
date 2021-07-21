@@ -6,11 +6,13 @@ function Feed() {
     return (
         <div className = 'feed'>
             <div className="feed__inputContainer">
-                <CreatIcon />
-                <form>
-                    <input type="text" />
-                    <button>Send</button>
-                </form>
+                <div className="feed__input">
+                    <CreatIcon />
+                    <form>
+                        <input type="text" />
+                        <button type = 'submit'>Send</button>
+                    </form>
+                </div>
             </div>
         </div>
     )
