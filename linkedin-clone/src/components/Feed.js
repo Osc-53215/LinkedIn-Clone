@@ -28,7 +28,12 @@ function Feed() {
                 </div>
             </div>
             
-            <Posts />
+            <Posts 
+            name = 'Oscar Colon'
+            description = 'This is a test'
+            message = 'this is a message'
+            photoUrl = ''
+            />
         </div>
     )
 }
