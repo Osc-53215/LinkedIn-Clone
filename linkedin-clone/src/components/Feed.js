@@ -7,9 +7,12 @@ import ImageIcon from '@material-ui/icons/Image';
 import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
+import { useState } from 'react';
 
 
 function Feed() {
+    const [posts, setPosts] = useState([])
+
     return (
         <div className = 'feed'>
             <div className="feed__inputContainer">
@@ -27,8 +30,13 @@ function Feed() {
                         <InputOption Icon = {CalendarViewDayIcon} title = 'Write article' color = '#7FC15E'/>
                 </div>
             </div>
-            
-            <Posts 
+
+
+            {posts.map((posts) => (
+                <Posts />
+            ))}
+
+            <Posts
             name = 'Oscar Colon'
             description = 'This is a test'
             message = 'this is a message'
