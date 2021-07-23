@@ -11,7 +11,11 @@ import { useState } from 'react';
 
 
 function Feed() {
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState([]);
+
+    const sendPost = (e) => {
+        e.preventDefault();
+    }
 
     return (
         <div className = 'feed'>
@@ -20,7 +24,7 @@ function Feed() {
                     <CreatIcon />
                     <form>
                         <input type="text" />
-                        <button type = 'submit'>Send</button>
+                        <button onClick = {sendPost} type = 'submit'>Send</button>
                     </form>
                 </div>
                 <div className="feed__inputOptions">
@@ -32,7 +36,7 @@ function Feed() {
             </div>
 
 
-            {posts.map((posts) => (
+            {posts.map((post) => (
                 <Posts />
             ))}
 
