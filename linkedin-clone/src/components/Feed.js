@@ -7,11 +7,13 @@ import ImageIcon from '@material-ui/icons/Image';
 import CalendarViewDayIcon from '@material-ui/icons/CalendarViewDay';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import SubscriptionsIcon from '@material-ui/icons/Subscriptions';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from '../firebase';
+import firebase from 'firebase';
 
 
 function Feed() {
+    const [input, setInput] = useState('')
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
@@ -28,7 +30,13 @@ function Feed() {
     const sendPost = (e) => {
         e.preventDefault();
 
-        
+        db.collection('posts').add({
+            name: 'Oscar Colon',
+            description: 'this is a test',
+            message: input,
+            photoUrl: '',
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        })
     }
 
     return (
@@ -37,7 +45,7 @@ function Feed() {
                 <div className="feed__input">
                     <CreatIcon />
                     <form>
-                        <input type="text" />
+                        <input value = {input} onChange = {e => setInput(e.target.value)} type="text" />
                         <button onClick = {sendPost} type = 'submit'>Send</button>
                     </form>
                 </div>
