@@ -4,7 +4,7 @@ import {Avatar} from '@material-ui/core'
 
 function Posts({ name, description, message, photoUrl }) {
     return (
-        <div className = 'posts'>
+        <div className = 'post'>
             <div className="post__header">
                 <Avatar />
 
