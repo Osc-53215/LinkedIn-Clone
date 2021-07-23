@@ -1,5 +1,6 @@
 import React from 'react';
 import './Feed.css';
+import Posts from './Posts';
 import InputOption from './InputOption';
 import CreatIcon from '@material-ui/icons/Create';
 import ImageIcon from '@material-ui/icons/Image';
@@ -26,6 +27,8 @@ function Feed() {
                         <InputOption Icon = {CalendarViewDayIcon} title = 'Write article' color = '#7FC15E'/>
                 </div>
             </div>
+            
+            <Posts />
         </div>
     )
 }
