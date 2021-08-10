@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { auth } from '../firebase'
 import './Login.css';
 
 function Login() {
 
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [name, setName] = useState('');
+
+    const loginToApp = (e) => {
+        e.preventDefault();
+    };
+
     const register = () => {};
-    const loginToApp = () => {};
 
 
     return (
