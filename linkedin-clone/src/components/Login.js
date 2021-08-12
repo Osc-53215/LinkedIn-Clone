@@ -21,21 +21,23 @@ function Login() {
             return alert('Please enter full name!');
         }
 
-        auth.createUserWithEmailAndPassword(email, password)
-        .then((userAuth) => {
+        auth.createUserWithEmailAndPassword(email, password).then(
+            (userAuth) => {
             userAuth.user.updateProfile({
                 displayName: name,
                 photoURL: profilePic,
             })
             .then(() => {
-                dispatch(login({
+                dispatch(
+                    login({
                     email: userAuth.user.email,
                     uid: userAuth.user.uid,
                     displayName: name,
                     photoUrl: profilePic,
-                }))
-            })
-        })
+                    })
+                );
+            });
+        }).catch(error => alert(error.message));
     };
 
 
