@@ -44,7 +44,7 @@ function Header() {
                 <HeaderOption Icon = {NotificationIcon} title = 'Notifications' />
 
                 <HeaderOption 
-                avatar = 'https://media-exp1.licdn.com/dms/image/C4D03AQESKTwrq1CQIA/profile-displayphoto-shrink_800_800/0/1626405323503?e=1632355200&v=beta&t=htYTUm_1kXm_QM5zEat6_9bmMVF9duBPPiPwiZmcjzo' 
+                avatar = {true}
                 title = 'me'
                 onClick = {logoutOfApp}
                 />
