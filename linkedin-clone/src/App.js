@@ -7,7 +7,7 @@ import Login from './components/Login';
 import { selectUser, login, logout } from './features/userSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { auth } from './firebase';
-import { Widgets } from '@material-ui/icons';
+import  Widgets  from './components/Widgets';
 
 function App() {  
   const user = useSelector(selectUser);
