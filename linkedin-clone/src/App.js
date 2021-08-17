@@ -7,6 +7,7 @@ import Login from './components/Login';
 import { selectUser, login, logout } from './features/userSlice';
 import { useSelector, useDispatch } from 'react-redux';
 import { auth } from './firebase';
+import { Widgets } from '@material-ui/icons';
 
 function App() {  
   const user = useSelector(selectUser);
@@ -42,6 +43,7 @@ function App() {
         <div className = 'app__body'>
           <Sidebar />
           <Feed />
+          <Widgets/>
         </div>
       )}
     </div>
