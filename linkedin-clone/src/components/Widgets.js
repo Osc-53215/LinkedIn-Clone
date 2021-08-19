@@ -24,6 +24,11 @@ function Widgets() {
                 <InfoIcon />
             </div>
             {newsArticle('This is a test', 'Top news - 999 readers')}
+            {newsArticle('Coronavirus: US updates', 'Top news - 834 readers')}
+            {newsArticle('Tesla hits new highs', 'Cars & auto - 300 readers')}
+            {newsArticle('Bitcoin Breaks $22k', 'Crypto - 8000 readers')}
+            {newsArticle('Is Redux too good?', 'Code - 123 readers')}
+            {newsArticle('DevCodeCamp launches new course?!', 'Top news - 2388 readers')}
         </div>
     );
 }
