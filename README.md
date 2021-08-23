@@ -1,4 +1,3 @@
-
 ### About the Project
 
 > The LinkedIn-clone web application presents a custom LinkedIn-clone.
