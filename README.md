@@ -25,5 +25,5 @@ This project was built with these technologies.
  
  ## Show your support
  
- If you've read this far ... give me a ⭐️!
+ If you've read this far ... give me a ⭐!
  
